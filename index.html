@@ -97,10 +97,118 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li>
+                                <a class="text-[#FF4240] bold">Home</a>
+                            </li>
+                            <li>
+                                <a class="text-base regular text-[#424247]">About</a>
+
+                            </li>
+                            <li>
+                                <a class="text-base regular text-[#424247]">Pages</a>
+                            </li>
+                            <li>
+                                <a class="text-base regular text-[#424247]">Blog</a>
+                            </li>
+                            <li>
+                                <a class="text-base regular text-[#424247]">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl text-[131318] extrabold">Hockey<span
+                            class="text-[#FF4240] text-4xl">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li>
+                            <a><span class="text-[#FF4240] text-base bold">Home</span></a>
+                        </li>
+                        <li>
+                            <a class="text-base regular text-[#424247]">About</a>
+
+                        </li>
+                        <li>
+                            <a class="text-base regular text-[#424247]">Pages</a>
+                        </li>
+                        <li>
+                            <a class="text-base regular text-[#424247]">Blog</a>
+                        </li>
+                        <li>
+                            <a class="text-base regular text-[#424247]">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <img src="Images/searchLil.png" alt="">
+                    <a class="btn bg-[#FF4240] text-xl bold text-[#fff] ml-6">Button</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="sm:relative banner">
+
+            <div class="carousel w-full h-[550px]">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png"
+                        class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png"
+                        class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png"
+                        class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/4.png"
+                        class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="sm:absolute bottom-10 right-16 overLay bg-[#131318] p-8 lg:w-[566px] h-[165px] rounded-2xl">
+                <h3 class="text-2xl extrabold text-[#fff]">Meet all the heroes from the field</h3>
+                <p class="text-[#ffffff99] text-base medium mt-4">Meet the heroes from the field and get inspired by their incredible journey and achievements</p>
+            </div>
+
+        </div>
+
+
+
+
+    </header>
     <main class="max-w-6xl mx-auto">
-
-
         <section class="prog my-32">
             <div class="text-center mb-20">
                 <h2 class="text-4xl text-[#131318] extrabold">Professional Hockeys Club</h2>
@@ -110,16 +218,18 @@
                 </p>
             </div>
             <!-- progress part -->
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-5" >
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
                 <div class="text-center">
-                    <div class="radial-progress text-[#131318] text-3xl bold mb-6" style="--value:70;" role="progressbar">70%</div>
+                    <div class="radial-progress text-[#131318] text-3xl bold mb-6" style="--value:70;"
+                        role="progressbar">70%</div>
                     <h3 class="text-[#131318] text-xl semibold mb-4">Prayer Facility</h3>
                     <p class="text-[#13131899] text-base regular ">
                         Our academy provides a dedicated prayer facility, ensuring a quiet and respectful space for
                         spiritual needs at any time.</p>
                 </div>
                 <div class="text-center">
-                    <div class="radial-progress text-[#131318] text-3xl bold mb-6" style="--value:35;" role="progressbar">35%</div>
+                    <div class="radial-progress text-[#131318] text-3xl bold mb-6" style="--value:35;"
+                        role="progressbar">35%</div>
 
                     <h3 class="text-[#131318] text-xl semibold mb-4">Experienced Coach</h3>
                     <p class="text-[#13131899] text-base regular ">
@@ -127,7 +237,8 @@
                         achieve their full potential with personalized training and mentorship.</p>
                 </div>
                 <div class="text-center">
-                    <div class="radial-progress text-[#131318] text-3xl bold mb-6" style="--value:76;" role="progressbar">76%</div>
+                    <div class="radial-progress text-[#131318] text-3xl bold mb-6" style="--value:76;"
+                        role="progressbar">76%</div>
 
 
                     <h3 class="text-[#131318] text-xl semibold mb-4">Senior Player</h3>
@@ -137,7 +248,8 @@
                         and support younger athletes on their hockey journey.</p>
                 </div>
                 <div class="text-center">
-                    <div class="radial-progress text-[#131318] text-3xl bold mb-6" style="--value:50;" role="progressbar">50%</div>
+                    <div class="radial-progress text-[#131318] text-3xl bold mb-6" style="--value:50;"
+                        role="progressbar">50%</div>
 
 
                     <h3 class="text-[#131318] text-xl semibold mb-4">Training Ground</h3>
